@@ -5,11 +5,20 @@ export default class BridgeService extends cds.ApplicationService {
   init() {
     this.on('receiveOpportunityEvent', async (req) => {
       console.log("Data from sales cloud: ", req.data);
-      const {
-        opportunityId,
-        opportunityName,
-        accountName
-      } = req.data;
+
+      //sales cloud config changes start
+      console.log("Payload data: ",req.data.data.currentImage);
+      const fullPayload = req.data.data.currentImage;
+      const opportunityId = fullPayload.displayId;
+      const opportunityName = fullPayload.name;
+      const accountName = fullPayload.account.id;
+      //sales cloud changes end
+
+      // const {
+      //   opportunityId,
+      //   opportunityName,
+      //   accountName
+      // } = req.data;
 
       // 1. Validate incoming opportunity data
       if (!opportunityId || !opportunityName || !accountName) {

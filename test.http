@@ -4,7 +4,247 @@ POST http://localhost:4004/bridge/receiveOpportunityEvent
 Content-Type: application/json
 
 {
-  "opportunityId": "OPP-TEST-001",
-  "opportunityName": "Test Opportunity from BAS",
-  "accountName": "Global Bike World"
+    "currentImage": {
+        "id": "62edda8a-cc49-11f1-b6dc-072ab4807bea",
+        "displayId": "76",
+        "draftMode": false,
+        "name": "Test opp",
+        "documentType": "OPPT",
+        "status": "1",
+        "consistencyStatus": "INCONSISTENT",
+        "startDate": "2026-10-20",
+        "closeDate": "2026-10-30",
+        "probability": 10,
+        "revenueStartDate": "2026-10-30",
+        "revenueEndDate": "2026-10-30",
+        "forecastCategory": "1",
+        "salesCycle": "001",
+        "salesPhase": "001",
+        "phaseStartDate": "2026-10-20T05:44:58.940Z",
+        "phaseProgress": "1",
+        "opportunityScore": 0,
+        "engagementScore": 0,
+        "isEndOfPurpose": false,
+        "account": {
+            "id": "11ed6592-5597-6e0e-afdb-814184010a00"
+        },
+        "shipToAccount": {
+            "id": "11ed6592-5597-6e0e-afdb-814184010a00"
+        },
+        "billToAccount": {
+            "id": "11ed6592-5597-6e0e-afdb-814184010a00"
+        },
+        "payerAccount": {
+            "id": "11ed6592-5597-6e0e-afdb-814184010a00"
+        },
+        "individualCustomer": {},
+        "mainSalesEmployee": {
+            "id": "0199e389-e0c8-7000-9464-265b462331b4"
+        },
+        "primaryContact": {
+            "id": "11ed6664-653b-9bbe-afdb-81dbbb010a00",
+            "partyRole": "591",
+            "partyRoleCategory": "59"
+        },
+        "owner": {
+            "id": "0199e389-e0c8-7000-9464-265b462331b4"
+        },
+        "salesOrganisation": {},
+        "salesUnit": {},
+        "salesOffice": {},
+        "salesGroup": {},
+        "territory": {},
+        "headerRevenueSchedule": false,
+        "campaign": {},
+        "worklistItems": [
+            {
+                "id": "6aa875e4-cc49-11f1-9980-19e4e5e13c78",
+                "type": "APPOINTMENT",
+                "salesPhase": "001",
+                "title": "Appointment on Initial Need Analysis",
+                "description": "Appointment on Initial Need Analysis",
+                "priority": "3",
+                "category": "1001",
+                "isMandatory": false,
+                "status": "PROPOSED",
+                "startDateTime": "2026-10-30T05:44:58.940Z",
+                "sourceType": "SALES_PLAYBOOK",
+                "sourceId": "a6c1e2ce-7549-11ed-a960-2f6b98df27f2",
+                "sourceItemId": "a6c1e2c5-7549-11ed-a960-5b638fc1e2a0",
+                "executionOrder": 0,
+                "autoExecute": false
+            },
+            {
+                "id": "6aa875e5-cc49-11f1-9980-21720a9a29b1",
+                "type": "TASK",
+                "salesPhase": "001",
+                "title": "New Opportunity Preparation",
+                "description": "New Opportunity Preparation",
+                "priority": "NORMAL",
+                "category": "0002",
+                "isMandatory": false,
+                "status": "PROPOSED",
+                "startDateTime": "2026-10-20T05:44:58.940Z",
+                "endDateTime": "2026-10-30T05:44:58.940Z",
+                "sourceType": "SALES_PLAYBOOK",
+                "sourceId": "a6c1e2ce-7549-11ed-a960-2f6b98df27f2",
+                "sourceItemId": "a6c1e2c8-7549-11ed-a960-29e470854a2b",
+                "executionOrder": 0,
+                "autoExecute": false
+            },
+            {
+                "id": "6aa875e6-cc49-11f1-9980-6140a540738b",
+                "type": "ACTION",
+                "salesPhase": "001",
+                "title": "Update Probability and Expected Value",
+                "actionFields": [
+                    "probability",
+                    "expectedRevenueAmount"
+                ],
+                "isMandatory": false,
+                "status": "PROPOSED",
+                "sourceType": "SALES_PLAYBOOK",
+                "sourceId": "a6c1e2ce-7549-11ed-a960-2f6b98df27f2",
+                "sourceItemId": "95c10d52-0405-11f0-b4fa-d9f350a04292",
+                "executionOrder": 0,
+                "autoExecute": false
+            }
+        ],
+        "hyperNotes": [],
+        "contacts": [
+            {
+                "id": "8b162817-8a2e-41d1-b834-1bc51a1bcdd1",
+                "partyId": "11ed6664-653b-9bbe-afdb-81dbbb010a00",
+                "partyRole": "591",
+                "partyRoleCategory": "59",
+                "type": "147",
+                "connectedColleagues": 0,
+                "determinationMethod": "7",
+                "decisionMaker": false,
+                "isPrimary": true
+            }
+        ],
+        "salesTeam": [
+            {
+                "id": "9d54ddd2-aa8a-4a91-8496-9412412f9147",
+                "partyId": "0199e389-e0c8-7000-9464-265b462331b4",
+                "role": "46",
+                "roleCategory": "46",
+                "determinationMethod": "3",
+                "type": "167",
+                "isPrimary": true
+            }
+        ],
+        "involvedParties": [
+            {
+                "id": "c85603b0-fe23-4edd-b2c3-27e4d564150c",
+                "partyId": "11ed6592-5597-6e0e-afdb-814184010a00",
+                "role": "1005",
+                "roleCategory": "5",
+                "determinationMethod": "5",
+                "type": "159",
+                "addressId": "11ed6592-5598-cd9e-afdb-814184010a00",
+                "isPrimary": true
+            },
+            {
+                "id": "a808863b-b6a0-4d04-aec8-de33d0cc3466",
+                "partyId": "11ed6592-5597-6e0e-afdb-814184010a00",
+                "role": "10",
+                "roleCategory": "10",
+                "determinationMethod": "5",
+                "type": "159",
+                "addressId": "11ed6592-5598-cd9e-afdb-814184010a00",
+                "isPrimary": true
+            },
+            {
+                "id": "c32f2221-c744-41b4-a70e-22237ba4c804",
+                "partyId": "11ed6592-5597-6e0e-afdb-814184010a00",
+                "role": "8",
+                "roleCategory": "8",
+                "determinationMethod": "5",
+                "type": "159",
+                "addressId": "11ed6592-5598-cd9e-afdb-814184010a00",
+                "isPrimary": true
+            }
+        ],
+        "revenuePlans": [
+            {
+                "id": "6a9da06c-cc49-11f1-9980-1b94655d3a56",
+                "partyId": "0199e389-e0c8-7000-9464-265b462331b4",
+                "splitPercentage": 100,
+                "territory": {},
+                "salesUnit": {}
+            }
+        ],
+        "revenueSchedules": [],
+        "attachments": [],
+        "adminData": {
+            "createdBy": "4e434316-a91a-11f0-b2ce-ed733dc70695",
+            "createdOn": "2026-10-20T05:44:58.846Z",
+            "updatedBy": "4e434316-a91a-11f0-b2ce-ed733dc70695",
+            "updatedOn": "2026-10-20T05:45:11.750Z"
+        },
+        "snapshots": [
+            {
+                "validStartOn": "2026-10-20T05:45:12.062Z",
+                "validEndOn": "9999-12-31T00:00:00Z",
+                "status": "1",
+                "statusDescription": null,
+                "customStatus": null,
+                "closeDate": "2026-10-30",
+                "revenueStartDate": "2026-10-30",
+                "expectedRevenueAmount": null,
+                "totalExpectedNetAmount": null,
+                "weightedNetAmount": null,
+                "forecastCategory": "1",
+                "forecastCategoryDescription": null,
+                "salesPhase": "001",
+                "salesPhaseDescription": null,
+                "sequence": 1
+            }
+        ],
+        "accessControlEntries": [
+            "0199e389-e0c8-7000-9464-265b462331b4"
+        ],
+        "parties": [
+            {
+                "id": "9d54ddd2-aa8a-4a91-8496-9412412f9147",
+                "partyId": "0199e389-e0c8-7000-9464-265b462331b4",
+                "role": "46",
+                "roleCategory": "46",
+                "isPrimary": true
+            },
+            {
+                "id": "8b162817-8a2e-41d1-b834-1bc51a1bcdd1",
+                "partyId": "11ed6664-653b-9bbe-afdb-81dbbb010a00",
+                "role": "591",
+                "roleCategory": "59",
+                "isPrimary": true
+            },
+            {
+                "id": "c85603b0-fe23-4edd-b2c3-27e4d564150c",
+                "partyId": "11ed6592-5597-6e0e-afdb-814184010a00",
+                "role": "1005",
+                "roleCategory": "5",
+                "isPrimary": true
+            },
+            {
+                "id": "a808863b-b6a0-4d04-aec8-de33d0cc3466",
+                "partyId": "11ed6592-5597-6e0e-afdb-814184010a00",
+                "role": "10",
+                "roleCategory": "10",
+                "isPrimary": true
+            },
+            {
+                "id": "c32f2221-c744-41b4-a70e-22237ba4c804",
+                "partyId": "11ed6592-5597-6e0e-afdb-814184010a00",
+                "role": "8",
+                "roleCategory": "8",
+                "isPrimary": true
+            }
+        ],
+        "isRenewalOpportunity": false,
+        "isSubscriptionRelevant": false
+    },
+    "beforeImage": null
 }
