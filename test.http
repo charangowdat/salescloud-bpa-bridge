@@ -1,0 +1,10 @@
+
+### Test opportunity-created event
+POST http://localhost:4004/bridge/receiveOpportunityEvent
+Content-Type: application/json
+
+{
+  "opportunityId": "OPP-TEST-001",
+  "opportunityName": "Test Opportunity from BAS",
+  "accountName": "Global Bike World"
+}

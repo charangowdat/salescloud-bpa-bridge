@@ -1,0 +1,10 @@
+
+---
+applications:
+  - name: salescloud-bpa-bridge
+    memory: 512M
+    buildpacks:
+      - nodejs_buildpack
+    random-route: true
+    services:
+      - salescloud-bpa-bridge-xsuaa
